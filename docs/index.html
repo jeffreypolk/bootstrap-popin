@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="stylesheets/my.css">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>bootstrap-popin by jeffreypolk</title>
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <h1>bootstrap-popin</h1>
+            <h2>Provides a UI notification that "pops in" to the screen</h2>
+            <a href="https://github.com/jeffreypolk/bootstrap-popin" class="button"><small>View project on</small> GitHub</a>
+        </div>
+    </header>
+
+    <div id="content-wrapper">
+        <div class="inner clearfix">
+            <section id="main-content">
+                <!-- Overview -->
+                <div>
+                    <h3>
+                        <a id="Overview" class="anchor" href="#Overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+                        Overview
+                    </h3>
+                    <p>
+                        Provides a UI notification that "pops in" to the screen.  It is built on jQuery and Bootstrap.
+                    </p>
+                </div>
+
+                <!-- Dependencies -->
+                <div>
+                    <h3>
+                        <a id="Dependencies" class="anchor" href="#Dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+                        Dependencies
+                    </h3>
+                    <p>
+                        The project was built on the following.  It does nothing fancy and will probably work with all future versions:
+                        <ul>
+                            <li>jQuery 2.2.4</li>
+                            <li>Bootstrap 3.3.6</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <!-- Setup -->
+                <div>
+                    <h3>
+                        <a id="Setup" class="anchor" href="#Setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+                        Setup
+                    </h3>
+                    <p>
+                        The use bootstrap-popin in your project, include the following:
+                        <ul>
+                            <li>popin.css</li>
+                            <li>popin.min.js</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <!-- Options -->
+                <div>
+                    <h3>
+                        <a id="Options" class="anchor" href="#Options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+                        Options
+                    </h3>
+                    <p>
+                        To initialize a popin, use JavaScript passing the options.  The following are the default options:
+                    </p>
+                    
+                    <table class="items">
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Default</td>
+                                <td>Description</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>type</td>
+                                <td>info</td>
+                                <td>The bootstrap css class applied to the body.  This is meant to work with one of the built-in classes for alerts: <span class="code">info, success, warning, danger</span>.</td>
+                            </tr>
+                            <tr>
+                                <td>message</td>
+                                <td>null</td>
+                                <td>The markup to display in the popin.  This can be text or html.</td>
+                            </tr>
+                            <tr>
+                                <td>autoClose</td>
+                                <td>false</td>
+                                <td>Controls if the popin is automatically closed. If false, it is not closed. If true, it is closed after two seconds. If an integer is specified, it will close after that number of milliseconds.</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Usage -->
+                <div>
+                    <h3>
+                        <a id="Usage" class="anchor" href="#Usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+                        Usage
+                    </h3>
+                    <p>
+                        Popins can target an element or the body.  If an element, the popin will be inserted as a child of that element.  This is helpful for notifications related to a certain part 
+                        of the page.  If the body, absolute positioning will be used to center the popin at the top of the view port.  This is helpful for page-level notifications.  
+                    </p>
+                    <script src="https://gist.github.com/jeffreypolk/7a7c7610160350a0fa1d1519197aa159.js"></script>
+                </div>
+
+                <!-- Examples -->
+                <div>
+                    <h3>
+                        <a id="Examples" class="anchor" href="#Examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+                        Examples
+                    </h3>
+                    <p>
+                        <a href="examples/example.html" target="_blank">Usage</a> shows the usage
+                    </p>
+                </div>
+            </section>
+
+            <aside id="sidebar">
+                <a href="https://github.com/jeffreypolk/bootstrap-popin/zipball/master" class="button">
+                    <small>Download</small>
+                    .zip file
+                </a>
+                <a href="https://github.com/jeffreypolk/bootstrap-popin/tarball/master" class="button">
+                    <small>Download</small>
+                    .tar.gz file
+                </a>
+
+                <p class="repo-owner"><a href="https://github.com/jeffreypolk/bootstrap-popin"></a> is maintained by <a href="https://github.com/jeffreypolk">jeffreypolk</a>.</p>
+
+                <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+            </aside>
+        </div>
+    </div>
+
+
+</body>
+</html>

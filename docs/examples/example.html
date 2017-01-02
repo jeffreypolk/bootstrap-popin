@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="popin.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="popin.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('.pop-div').click(function () {
+                var type = $(this).data('type');
+                $('.msg-container').popin({
+                    type: type,
+                    message: 'Here is some ' + type,
+                    autoClose: true
+                });
+            });
+
+            $('.pop-body').click(function () {
+                var type = $(this).data('type');
+                $('body').popin({
+                    type: type,
+                    message: 'Here is some ' + type,
+                    autoClose: true
+                });
+            });
+
+        });
+    </script>
+    
+    <title>bootstrap-popin example</title>
+</head>
+<body>
+    <div class="container">
+        <br/>
+        <div>Messages to a container:</div>
+        <div class="msg-container"></div>
+        <br/>
+        <button class="btn pop-div" data-type="info">Popin Info</button> 
+        <button class="btn pop-div" data-type="success">Popin Success</button> 
+        <button class="btn pop-div" data-type="warning">Popin Warning</button> 
+        <button class="btn pop-div" data-type="danger">Popin Danger</button> 
+        
+        <br/>
+        <hr />
+        
+        <div>Messages to the body:</div>
+        <br />
+        <button class="btn pop-body" data-type="info">Popin Info</button>
+        <button class="btn pop-body" data-type="success">Popin Success</button>
+        <button class="btn pop-body" data-type="warning">Popin Warning</button>
+        <button class="btn pop-body" data-type="danger">Popin Danger</button>
+
+    </div>
+</body>
+</html>

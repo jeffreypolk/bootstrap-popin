@@ -1,0 +1,31 @@
+﻿
+.popin {
+    display:none;
+}
+.popin-message-wrap {
+    border-radius: 4px;
+    max-height: 300px;
+    overflow: auto;
+}
+.popin-message {
+    
+}
+.popin .close {
+    margin-right:5px;
+}
+
+/* special css when used in the body */
+.popin-body {
+    position: absolute;
+    top: 6px;
+    width: 100%;
+    z-index: 9999999;
+}
+.popin-message-wrap-body {
+    margin: 0 auto;
+    max-width: 300px;
+    border-radius: 4px;
+}
+.popin-message-body {
+    text-align:center;
+}
